@@ -17,6 +17,11 @@ const menu = [
     name: "Add new",
     to: "/create",
   },
+  {
+    id: 4,
+    name: "Photos",
+    to: "/photos",
+  },
 ];
 
 const Layout = () => {

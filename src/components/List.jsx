@@ -24,16 +24,6 @@ const List = ({ dataList }) => {
           ))}
         </tbody>
       </table>
-      {/* <ul>
-        {dataList.map((item, index) => (
-          <li key={index}>
-            <p>Name: {item.name}</p>
-            <p>Email: {item.email}</p>
-            <p>Sdt: {item.sdt}</p>
-            <hr />
-          </li>
-        ))}
-      </ul> */}
     </div>
   );
 };

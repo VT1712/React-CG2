@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import List from "./components/List";
 import AddNew from "./components/AddNew";
 import Page404 from "./components/Page404";
+import Photos from "./components/useEffect/photo/Photos";
 
 function App() {
   const [dataList, setDataList] = useState([]);
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/list" element={<List dataList={dataList} />} />
           <Route path="/create" element={<AddNew addToList={addToList} />} />
+          <Route path="/photos" element={<Photos />} />
           <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>
