@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Timer from "../Timer";
 
 const getPhotos = async (page) => {
   return axios
@@ -27,12 +28,11 @@ const Photos = () => {
     console.log("inside");
   }, []);
 
-  const handleLoadMore = () => {
-    getPhotos(nextPage).then((images) => {
-      console.log(images);
-      setRandomPhotos(images);
-      setNextPage(nextPage + 1);
-    });
+  const handleLoadMore = async () => {
+    const images = await getPhotos(nextPage);
+    const newPhotos = [...randomPhotos, ...images];
+    setRandomPhotos(newPhotos);
+    setNextPage(nextPage + 1);
   };
 
   return (
@@ -60,6 +60,8 @@ const Photos = () => {
           Load more
         </button>
       </div>
+
+      <Timer></Timer>
     </div>
   );
 };
