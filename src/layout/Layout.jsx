@@ -22,6 +22,11 @@ const menu = [
     name: "Photos",
     to: "/photos",
   },
+  {
+    id: 5,
+    name: "Form",
+    to: "/form",
+  },
 ];
 
 const Layout = () => {
