@@ -1,0 +1,83 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "author": 100
+    }
+  ],
+  "Courses": [
+    {
+      "id": "4d5c",
+      "image": "https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Development",
+      "author": "Tung",
+      "rating": 5,
+      "price": 99,
+      "bestSeller": true,
+      "buyAmount": 59
+    },
+    {
+      "id": "04bb",
+      "image": "https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "FE",
+      "author": "Nam",
+      "rating": 4,
+      "price": 100,
+      "bestSeller": true,
+      "buyAmount": 60
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "username": "tung",
+      "password": "abcadwqweq",
+      "email": "Tung@gmail.com",
+      "gender": "Male",
+      "job": "Teacher",
+      "term": true
+    },
+    {
+      "id": "582b",
+      "username": "ikun172k",
+      "password": "Tung1234!",
+      "email": "sanking1712@gmail.com",
+      "gender": "male",
+      "job": "Developer",
+      "term": true
+    },
+    {
+      "id": "d5e8",
+      "username": "Tung2000",
+      "password": "Tung123!!!!",
+      "email": "BachViet@gmail.com",
+      "gender": "male",
+      "job": "Teacher",
+      "term": true
+    },
+    {
+      "id": "17d8",
+      "username": "Bach123",
+      "password": "Bach!123",
+      "email": "BachViet@gmail.com",
+      "gender": "male",
+      "job": "Teacher",
+      "term": true
+    }
+  ]
+}

@@ -23,9 +23,12 @@ const DropdownFormik = ({
   //   if (dropdownValue === "") setLabel(dropdownLabel);
   // }, [dropdownValue]);
   const [field, meta] = useField({ name });
+
   // console.log("field", field);
   useEffect(() => {
     if (field.value === "") setLabel(dropdownLabel);
+    handleClickDropdownItem;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [field.value]);
   return (
     <div className="flex flex-col gap-3 mt-5 mb-5">

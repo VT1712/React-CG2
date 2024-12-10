@@ -1,31 +1,32 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Formik, useFormik, Form, useField } from "formik";
+import { Formik, useFormik, Form, useField, Field } from "formik";
 import * as Yup from "yup";
 import Input from "./input/Input";
 import Radio from "./radio/Radio";
 import DropdownFormik from "./dropdown/DropdownFormik";
 import Checkbox from "./checkbox/Checkbox";
+import axios from "axios";
 
 const dropdownData = [
   {
     id: 1,
-    value: "teacher",
+    value: "Teacher",
     text: "Teacher",
   },
   {
     id: 2,
-    value: "developer",
+    value: "Developer",
     text: "Developer",
   },
   {
     id: 3,
-    value: "doctor",
+    value: "Doctor",
     text: "Doctor",
   },
   {
     id: 4,
-    value: "constructor",
+    value: "Constructor",
     text: "Constructor",
   },
 ];
@@ -67,7 +68,21 @@ const FormFormik = () => {
         }).required()}
         onSubmit={(value, { setSubmitting, resetForm }) => {
           setTimeout(() => {
-            console.log(value);
+            const body = value;
+            console.log(body);
+            axios({
+              method: "POST",
+              url: "http://localhost:3000/users",
+              data: body,
+            })
+              .then((res) => {
+                console.log(res);
+                alert("Successfully add user");
+              })
+              .catch((res) => {
+                console.log(res);
+              });
+
             setSubmitting(false);
             resetForm();
           }, 2000);
@@ -75,6 +90,7 @@ const FormFormik = () => {
       >
         {(formik) => {
           const watchGender = formik.values.gender;
+
           return (
             <form
               action=""
