@@ -45,36 +45,10 @@
   },
   "users": [
     {
-      "username": "tung",
-      "password": "abcadwqweq",
-      "email": "Tung@gmail.com",
-      "gender": "Male",
-      "job": "Teacher",
-      "term": true
-    },
-    {
-      "id": "582b",
-      "username": "ikun172k",
-      "password": "Tung1234!",
-      "email": "sanking1712@gmail.com",
-      "gender": "male",
-      "job": "Developer",
-      "term": true
-    },
-    {
-      "id": "d5e8",
-      "username": "Tung2000",
-      "password": "Tung123!!!!",
-      "email": "BachViet@gmail.com",
-      "gender": "male",
-      "job": "Teacher",
-      "term": true
-    },
-    {
-      "id": "17d8",
-      "username": "Bach123",
-      "password": "Bach!123",
-      "email": "BachViet@gmail.com",
+      "id": "89b4",
+      "username": "jon258431",
+      "password": "Admi1n23!",
+      "email": "khanhvan.vu@jonckers.com",
       "gender": "male",
       "job": "Teacher",
       "term": true
